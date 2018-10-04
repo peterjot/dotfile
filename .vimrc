@@ -19,3 +19,4 @@ imap <F3> <C-O>:q
 
 map <F2> :w<CR>
 map <F3> :q
+map s :2,$s/^pick/squash/<CR>
