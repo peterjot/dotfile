@@ -2,7 +2,9 @@
 
 log_file=~/install_config_log.txt
 
-dotfiles_dir=$PWD
+dotfiles_dir=$(dirname "$(realpath $0)")
+
+export TERM=xterm-256color
 
 sudo rm -rf ~/.viminfo > /dev/null 2>&1
 sudo rm -rf ~/.vimrc > /dev/null 2>&1
