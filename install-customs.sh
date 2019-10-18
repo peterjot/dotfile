@@ -11,12 +11,14 @@ sudo rm -rf ~/.vimrc > /dev/null 2>&1
 sudo rm -rf ~/.tmux.conf > /dev/null 2>&1
 sudo rm -rf ~/.bashrc > /dev/null 2>&1
 sudo rm -rf ~/.profile > /dev/null 2>&1
+sudo rm -rf ~/.vim > /dev/null 2>&1
 
 ln -sf $dotfiles_dir/.vimrc ~/.vimrc
 ln -sf $dotfiles_dir/.viminfo ~/.viminfo
 ln -sf $dotfiles_dir/.bashrc ~/.bashrc
 ln -sf $dotfiles_dir/.profile ~/.profile
 ln -sf $dotfiles_dir/.tmux.conf ~/.tmux.conf
+ln -sf $dotfiles_dir/.vim ~/.vim
 
 sudo apt-get -y install vim
 if type -p vim > /dev/null; then
