@@ -27,6 +27,8 @@ set encoding=utf-8
 set background=dark
 
 syntax on
+" set syntax"
+au BufRead,BufNewFile *.asm set filetype=nasm
 
 imap <F2> <C-O>:w<CR>
 imap <F3> <C-O>:q
